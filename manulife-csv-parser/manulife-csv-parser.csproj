@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>manulife_csv_parser</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CsvHelper" Version="31.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="files\mcbl.csv">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="files\chinabank.csv">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="files\sequence.csv">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Remove="files\chinabank-v.01.csv" />
+      <None Remove="files\chinabank-v.02.csv" />
+      <None Remove="files\chinabank-v.03.csv" />
+      <None Remove="files\chinabankv4.csv" />
+      <None Remove="files\chinabankv5.csv" />
+      <None Remove="files\chinabankv6.csv" />
+      <None Remove="files\chinabankv8.csv" />
+      <None Remove="files\chinabankv9.csv" />
+      <None Remove="files\mcbl-v.01.csv" />
+      <None Remove="files\mcblv5.csv" />
+      <None Remove="files\mcbl-v.02.csv" />
+      <None Remove="files\mcblv8.csv" />
+      <None Remove="files\mcblv7.csv" />
+      <None Remove="files\mcbl-v.03.csv" />
+      <None Remove="files\mcblv4.csv" />
+      <None Remove="files\sequenceV2.csv" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="output\" />
+    </ItemGroup>
+
+</Project>
